@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Fatura - Etapa 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Magalu</h1>
+        <div class="color-bar"></div> <!-- Faixa colorida menor -->
+    </div>
+
+    <div class="container">
+        <h2>Consultar fatura</h2>
+        <p>Receba a 2ª via da fatura do cartão por e-mail</p>
+        <p>Para consultar sua fatura ou atualizar seu endereço de e-mail, acesse seu perfil ou entre em contato pelo atendimento.</p>
+
+        <div class="content">
+            <label for="mes">Validade do cartão</label>
+            <div class="validade-container">
+                <select id="mes" class="input-box">
+                    <option value="">Mês</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+
+                <select id="ano" class="input-box">
+                    <option value="">Ano</option>
+                    <option value="24">2024</option>
+                    <option value="25">2025</option>
+                    <option value="26">2026</option>
+                    <option value="27">2027</option>
+                    <option value="28">2028</option>
+                    <option value="29">2029</option>
+                    <option value="30">2030</option>
+                    <option value="31">2031</option>
+                    <option value="32">2032</option>
+                    <option value="33">2033</option>
+                    <option value="34">2034</option>
+                    <option value="35">2035</option>
+                    <option value="36">2036</option>
+                    <option value="37">2037</option>
+                    <option value="38">2038</option>
+                    <option value="39">2039</option>
+                    <option value="40">2040</option>
+                </select>
+            </div>
+
+            <button class="btn" onclick="salvarMesValidade()">Continuar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

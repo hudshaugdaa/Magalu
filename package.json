@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend para armazenar dados do formulário",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "fs": "0.0.1-security"
+  },
+  "scripts": {
+    "start": "node backend/server.js"
+  }
+}

