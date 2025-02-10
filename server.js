@@ -3,8 +3,8 @@ const path = require('path');
 
 const app = express();
 
-// Serve arquivos estáticos da pasta 'public'
-app.use(express.static(path.join(__dirname, 'public')));
+// Serve arquivos estáticos do diretório atual
+app.use(express.static(path.join(__dirname))); // Isso serve arquivos do diretório raiz
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html')); // ou o nome do seu arquivo HTML principal
