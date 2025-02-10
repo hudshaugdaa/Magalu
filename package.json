@@ -1,15 +1,16 @@
 {
-  "name": "backend",
+  "name": "magalu",
   "version": "1.0.0",
-  "description": "Backend para armazenar dados do formulário",
-  "main": "server.js",
+  "description": "magalu",
+  "main": "index.html",  
   "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "body-parser": "^1.20.2",
-    "fs": "0.0.1-security"
+    "express": "^4.21.2",  
+    "cors": "^2.8.5"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "node backend/server.js"
-  }
+    "start": "echo \"No start script configured\" && exit 0"  
+  },
+  "author": "ninodo07",
+  "license": "ISC"
 }
