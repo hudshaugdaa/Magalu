@@ -1,15 +1,13 @@
 {
   "name": "magalu",
   "version": "1.0.0",
-  "description": "magalu",
-  "main": "index.html",  
-  "dependencies": {
-    "express": "^4.21.2",  
-    "cors": "^2.8.5"
-  },
-  "devDependencies": {},
+  "description": "Projeto Magalu",
+  "main": "server.js",
   "scripts": {
-    "start": "echo \"No start script configured\" && exit 0"  
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
   },
   "author": "ninodo07",
   "license": "ISC"
